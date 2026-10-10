@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .vline {
+            position: fixed;
+            width: 60px;
+            height: 100%;
+            background-color: rgb(11, 45, 72);
+            text-align: center;
+       
+        }
+
+        .icon {
+            font-size: 20px;
+            padding: 10px;
+        }
+
+        .icon a i {
+            color: white;
+            margin: 10px;
+        }
+
+        .hero {
+            width: 100%;
+            height: 100vh;
+            background-image: url(banner.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .layer {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.321);
+            color: white;
+            text-align: center;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .layer h1 {
+            font-size: 75px;
+            margin: 20px;
+        }
+
+        h4 {
+            margin: 20px;
+        }
+
+        .layer h4 a {
+            text-decoration: none;
+            color: blue;
+        }
+
+        .layer button {
+            background-color:  rgb(11, 45, 72);
+            border-radius: 15px;
+            padding: 20px;
+            border: none;
+            color: white;
+            margin: 50px;
+        }
+
+        /*new section*/
+        .new-section {
+            padding: 45px;
+            text-align: center;
+        }
+
+        .pics {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            margin: 25px 10px;
+        }
+
+        .pic {
+            background-size: cover;
+            background-position: center;
+          width: 300px;
+            height: 300px;
+            margin: 5px;
+            border-radius: 10px;
+        }
+
+        .new-section button {
+            color: white;
+            border-radius: 15px;
+            padding: 20px;
+            background-color: rgb(24, 116, 190);
+            border: none;
+        }
+
+        /*about section*/
+        .about {
+            padding: 30px;
+            background-color:grey;
+            width: 100%;
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .aboutme {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex-basis: 40%;
+            padding: 20px;
+        }
+
+        .about p,
+        .about h2 {
+            margin: 20px;
+        }
+
+        .contact a i {
+            font-size: 25px;
+            padding: 25px;
+            margin: 2px;
+            color: rgb(24, 116, 190);
+        }
+
+        .touch {
+            display: flex;
+            flex-direction: column;
+            flex-basis: 40%;
+            padding: 20px;
+           
+        }
+        .touch form h4{
+            margin:10px;
+        }
+        .touch form button{
+            color: white;
+            background-color:  rgb(24, 116, 190);
+            border-radius: 10px;
+            padding: 10px;
+            border: none;
+            margin: 20px;
+            width: 75%;
+        }
+        .touch form div{
+            margin: 25px;
+        }
+        .touch form input,.touch form textarea{
+            width: 75%;
+        }
+        footer{
+            text-align: center;
+            padding: 20px;
+        }
+        footer a {
+            text-decoration: none;
+        }
+        @media screen and (max-width:768px) {
+            .layer h1{
+                font-size: 60px;
+            }
+            .new-section{
+                padding: 20px;
+            }
+           .pics{
+            flex-direction: column;
+           }
+    
+     .about{
+        flex-direction: column;
+        padding: 30px;
+        align-items: center;
+        justify-content: center;
+     }
+     footer{
+        font-size: 10px;
+     }
+     .touch{padding: 5px;}
+      .touch form div{
+            margin: 5px;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="vline">
+        <div class="icon"><a href="#"><i class="fa-solid fa-house"></i></a></div>
+        <div class="icon"><a href="#new"><i class="fa-solid fa-camera"></i></a></div>
+        <div class="icon"><a href="#about"><i class="fa-solid fa-file"></i></a></div>
+    </div>
+    <div class="hero">
+        <div class="layer">
+            <h1>Hey, im a snapshot</h1>
+            <h4>A fully responsive gallery template by <a href="">Templated</a></h4>
+            <button>Continue</button>
+        </div>
+    </div>
+    <section class="new-section" id="new">
+        <h1>Whats New</h1>
+        <div class="pics">
+            <div class="pic" style="background-image: url(img1.jpg);"></div>
+            <div class="pic" style="background-image: url(img2.jpg);"></div>
+            <div class="pic" style="background-image: url(img3.jpg);"></div>
+            <div class="pic" style="background-image: url(img5.jpg);"></div>
+            <div class="pic" style="background-image: url(img6.jpg);"></div>
+            <div class="pic" style="background-image: url(img7.jpg);"></div>
+            <div class="pic" style="background-image: url(img9.jpg);"></div>
+            <div class="pic" style="background-image: url(img10.jpg);"></div>
+
+        </div>
+        <button>Full Gallery</button>
+    </section>
+    <section class="about" id="about" >
+        <div class="aboutme">
+            <h2>About me </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente nihil cumque repellendus tempora non ea
+                doloremque cupiditate repudiandae illum temporibus, placeat, laudantium error odio quas excepturi
+                suscipit asperiores nesciunt rerum?</p>
+           
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius modi incidunt nobis quas illum,
+                repudiandae debitis assumenda officia quis esse id iste porro natus aut, adipisci exercitationem tempore
+                vero laboriosam?
+                Sequi a, iusto harum dolore sit error fuga inventore facere laudantium cum dolorum, saepe ea deserunt
+                molestias obcaecati possimus vel est cupiditate quam deleniti ex corporis assumenda earum animi?
+                Aspernatur.</p>
+
+            <h2>Follow Me </h2>
+            <div class="contact">
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="touch">
+            <h2>Get In Touch</h2>
+            <form>
+                <div>
+                    <h4>Name</h4>
+                    <input type="text" placeholder="Name">
+                </div>
+                <div>
+                    <h4>Email</h4>
+                    <input type="Email" placeholder="Email">
+                </div>
+                <div>
+                    <h4>Message</h4>
+                 <textarea name="text1" id="" rows="6" cols="35">message</textarea>
+                </div>
+                <button>Send Message</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <h2>&copy; UntitledDesign : <a href="#">Templated</a> .images: 
+        <a href="#">Unsplash</a>
+        </h2>
+    </footer>
+</body>
+
+</html>
